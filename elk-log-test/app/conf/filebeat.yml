@@ -10,13 +10,13 @@ setup.template.pattern: "app"
 setup.ilm.enabled: false
 
 output.elasticsearch:
-  hosts: ["192.168.1.102:9200"]
-  index: "app"
-#  index: "app-%{[agent.version]}-%{+yyyy.MM.dd}"
+  hosts: ["123.57.11.119:9200"]
+  # index: "app"
+  index: "app-%{[agent.version]}-%{+yyyy.MM.dd}"
 #  template.name: "filebeat"
 #  template.pattern: "*"
 #  template.path: "filebeat.template.json"
   template.overwrite: true
   username: "elastic"
-  password: "changeme"
+  password: "haoyida123"
 

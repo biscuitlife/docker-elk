@@ -5,11 +5,11 @@ services:
   app:
     container_name: web-api
     ports:
-      - "9090:80"
+      - "9090:9090"
     image: yonh/php:alpine-apache
     restart: always
     volumes:
-      - .:/app
+      - .:/api
     environment:
       - WEBAPP_ROOT=public
 

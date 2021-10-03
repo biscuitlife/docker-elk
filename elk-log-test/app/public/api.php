@@ -5,7 +5,7 @@ $data = @$_POST;
 
 _log('info', '提交到API的数据:' . json_encode($data));
 
-$result = sendRequest('http://192.168.1.102:9090',$data);
+$result = sendRequest('http://localhost:9090',$data);
 
 _log('info', '从API接受的数据:' . $result);
 
